@@ -11,6 +11,8 @@ int main() {
 	switch (c) {
 		case '+': printf("a %c b = %i", c, addition(a,b));
 			break;
+		case '-' : printf("a %c b = %i", c, subtraction(a,b));
+			break;
 		default : printf("INVALID CHOICE");
 			break;
 	}
@@ -19,5 +21,9 @@ int main() {
 }
 
 int addition(a, b) {
-return a + b;
+	return a + b;
+}
+
+int subtraction(a,b) {
+	return a - b;
 }
