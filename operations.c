@@ -13,6 +13,8 @@ int main() {
 			break;
 		case '-' : printf("a %c b = %i", c, subtraction(a,b));
 			break;
+		case '*' : printf("a %c b = %i", c, multiplication(a,b));
+			break;
 		default : printf("INVALID CHOICE");
 			break;
 	}
@@ -26,4 +28,8 @@ int addition(a, b) {
 
 int subtraction(a,b) {
 	return a - b;
+}
+
+int multiplication(a,b) {
+	return a * b;
 }
