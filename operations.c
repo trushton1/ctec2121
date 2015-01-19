@@ -17,6 +17,8 @@ int main() {
 			break;
 		case '/' : printf("a %c b = %i", c, division(a,b));
 			break;
+		case '%' : printf("a %c b = %i", c, remainder(a,b));
+			break;
 		default : printf("INVALID CHOICE");
 			break;
 	}
@@ -38,4 +40,8 @@ int multiplication(a,b) {
 
 int division(a,b) {
 	return a / b;
+}
+
+int remainder(a,b) {
+	return a % b;
 }
